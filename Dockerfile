@@ -1,5 +1,5 @@
 FROM python:3.11-slim
-ENV DASH_DEBUG_MODE False
+ENV DASH_DEBUG_MODE=False
 COPY . /app
 WORKDIR /app
 RUN pip install --upgrade pip && pip install -r requirements.txt
